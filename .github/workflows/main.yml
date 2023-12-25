@@ -171,7 +171,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          scripts: |
+          script: |
             cd taski
             # Выполняет pull образов с Docker Hub
             sudo docker compose -f docker-compose.production.yml pull
